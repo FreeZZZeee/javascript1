@@ -27,7 +27,8 @@ body {
                 color: #bebebe;
                 text-align: center;
                 padding-top: 20px;
-                margin-left: 10px;             
+                margin-left: 60px;
+                font-weight: bold;                            
                                 
             }
 
@@ -64,6 +65,8 @@ body {
                 text-transform: capitalize;
                 outline: none;
                 margin: 12px 30px;
+                border: 1px solid;
+                border-radius: 5px;
 
             }
         }
@@ -73,6 +76,42 @@ body {
         box-sizing: border-box;
         min-height: 100%;
         padding-bottom: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-product {
+            width: 200px;
+            margin: 65px 150px 10px 10px;
+            border: 1px solid #bebebe;
+            border-radius: 3px;
+            &:first-child {
+                margin-left: 50px;
+            }
+            &:nth-child(5) {
+                margin-left: 50px;
+            }
+            &-title {
+                display: block;
+                padding: 20px 0 10px 20px;
+                font-weight: bold;
+            }
+            &-price {
+                display: block;
+                padding-left: 20px;
+            }
+            & button {
+                width: 65px;
+                height: 25px;
+                margin: 10px 0 10px 20px;
+                background-color: #2e2d2d;
+                color: #fff;
+                outline: none;
+                border: 1px solid #2e2d2d;
+                border-radius: 5px;
+                font-size: 12px;
+            }
+        }
+
     }
 
     .footer {
